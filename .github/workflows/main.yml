@@ -7,4 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Say Hello
-        run: echo Hello
+        run: echo "Hello"
+
+      - name: copy repo
+        uses: actions/checkout@v6 #this is from github to copy repo
+
+      - name: list file
+        run: ls -la #checking to see if the files were copied
