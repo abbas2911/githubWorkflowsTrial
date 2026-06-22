@@ -15,7 +15,7 @@ jobs:
       - name: list file
         run: ls -la #checking to see if the files were copied
 
-      - name: generate ascii art #this is where you can install anything on these github hosted machines
+      - name: Run Script
         run: | 
-          chmod +x ./Trail.sh
-          ./Trial.sh
+          chmod +x Trail.sh
+          Trial.sh
