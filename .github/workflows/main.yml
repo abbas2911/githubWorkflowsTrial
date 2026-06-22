@@ -16,8 +16,6 @@ jobs:
         run: ls -la #checking to see if the files were copied
 
       - name: generate ascii art #this is where you can install anything on these github hosted machines
-        run:
-          sudo apt-get install -y figlet
-          figlet "TRIAL"
-          echo "--------------------------"
-          figlet -f digital "GitHub Action"
+        run: | 
+          chmod +x ./Trail.sh
+          ./Trial.sh
