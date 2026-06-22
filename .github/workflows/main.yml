@@ -1,0 +1,10 @@
+name: WorkflowTrial
+
+on: push
+
+jobs:
+  hellow-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo Hello
